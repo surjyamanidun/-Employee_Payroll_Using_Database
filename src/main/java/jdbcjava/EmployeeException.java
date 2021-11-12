@@ -1,5 +1,9 @@
 package jdbcjava;
 
-public class EmployeeException {
 
+public class EmployeeException extends RuntimeException{
+
+    public EmployeeException(String message) {
+        super(message);
+    }
 }
