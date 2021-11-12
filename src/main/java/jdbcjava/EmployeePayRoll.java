@@ -1,20 +1,23 @@
 package jdbcjava;
 
-
 import java.time.LocalDate;
 import java.util.Scanner;
+/**
+ * Purpose: This class is used for to take input from used perform the operartion
+ * @author SURJYAMANI DUAN
+ *
+ */
 
 public class EmployeePayRoll {
 	public static void main(String[] args) {
 		EmployeePayRollService employeePayRollService = new EmployeePayRollService();
 		Scanner scanner = new Scanner(System.in);
-	    scanner.close();
 
 		final int EXIT = 10;
 		int choice = 0;
 		while (choice != EXIT) {
 			System.out.println("enter your choice\n1. Execute query\n2. update basic pay\n3. display employee roll" +
-					"\n4. select range of employee\n0. EXIT\n");
+					"\n4. select range of employee\n5. calculate\n0. EXIT\n");
 			choice = scanner.nextInt();
 			switch (choice) {
 			case 0 : System.out.println("good bye");
@@ -38,6 +41,7 @@ public class EmployeePayRoll {
 				LocalDate eDate = LocalDate.parse(scanner.next());
 				employeePayRollService.selectEmployee(iDate,eDate);
 			}
+			case 5: employeePayRollService.calculate();
 
 			}
 		}

@@ -2,6 +2,11 @@ package jdbcjava;
 
 import java.util.ArrayList;
 
+/**
+ * Purpose: This class is used for getter and setter methods
+ * @author SURJYAMANI DUAN
+ */
+
 public class Employee {
 	int EmpId;
 	String EmpName, PhoneNumber, Address, Department, EmpStart, Gender;
