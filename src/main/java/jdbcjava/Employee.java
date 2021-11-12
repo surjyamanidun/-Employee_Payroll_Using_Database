@@ -1,121 +1,132 @@
 package jdbcjava;
 
+import java.util.ArrayList;
+
 public class Employee {
-    int EmpId;
-    String EmpName, PhoneNumber, Address, Department, EmpStart, Gender;
-    double BasicPay, Deductions, TaxablePay, IncomeTax, NetPay;
+	int EmpId;
+	String EmpName, PhoneNumber, Address, Department, EmpStart, Gender;
+	double BasicPay, Deductions, TaxablePay, IncomeTax, NetPay;
+	ArrayList<Employee> empList;
 
-    public int getEmpId() {
-        return EmpId;
-    }
+	public ArrayList<Employee> getEmpList() {
+		return empList;
+	}
 
-    public void setEmpId(int empId) {
-        EmpId = empId;
-    }
+	public void setEmpList(ArrayList<Employee> empList) {
+		this.empList = empList;
+	}
 
-    public String getEmpName() {
-        return EmpName;
-    }
+	public int getEmpId() {
+		return EmpId;
+	}
 
-    public void setEmpName(String empName) {
-        EmpName = empName;
-    }
+	public void setEmpId(int empId) {
+		EmpId = empId;
+	}
 
-    public String getPhoneNumber() {
-        return PhoneNumber;
-    }
+	public String getEmpName() {
+		return EmpName;
+	}
 
-    public void setPhoneNumber(String phoneNumber) {
-        PhoneNumber = phoneNumber;
-    }
+	public void setEmpName(String empName) {
+		EmpName = empName;
+	}
 
-    public String getAddress() {
-        return Address;
-    }
+	public String getPhoneNumber() {
+		return PhoneNumber;
+	}
 
-    public void setAddress(String address) {
-        Address = address;
-    }
+	public void setPhoneNumber(String phoneNumber) {
+		PhoneNumber = phoneNumber;
+	}
 
-    public String getDepartment() {
-        return Department;
-    }
+	public String getAddress() {
+		return Address;
+	}
 
-    public void setDepartment(String department) {
-        Department = department;
-    }
+	public void setAddress(String address) {
+		Address = address;
+	}
 
-    public String getEmpStart() {
-        return EmpStart;
-    }
+	public String getDepartment() {
+		return Department;
+	}
 
-    public void setEmpStart(String empStart) {
-        EmpStart = empStart;
-    }
+	public void setDepartment(String department) {
+		Department = department;
+	}
 
-    public String getGender() {
-        return Gender;
-    }
+	public String getEmpStart() {
+		return EmpStart;
+	}
 
-    public void setGender(String gender) {
-        Gender = gender;
-    }
+	public void setEmpStart(String empStart) {
+		EmpStart = empStart;
+	}
 
-    public double getBasicPay() {
-        return BasicPay;
-    }
+	public String getGender() {
+		return Gender;
+	}
 
-    public void setBasicPay(double basicPay) {
-        BasicPay = basicPay;
-    }
+	public void setGender(String gender) {
+		Gender = gender;
+	}
 
-    public double getDeductions() {
-        return Deductions;
-    }
+	public double getBasicPay() {
+		return BasicPay;
+	}
 
-    public void setDeductions(double deductions) {
-        Deductions = deductions;
-    }
+	public void setBasicPay(double basicPay) {
+		BasicPay = basicPay;
+	}
 
-    public double getTaxablePay() {
-        return TaxablePay;
-    }
+	public double getDeductions() {
+		return Deductions;
+	}
 
-    public void setTaxablePay(double taxablePay) {
-        TaxablePay = taxablePay;
-    }
+	public void setDeductions(double deductions) {
+		Deductions = deductions;
+	}
 
-    public double getIncomeTax() {
-        return IncomeTax;
-    }
+	public double getTaxablePay() {
+		return TaxablePay;
+	}
 
-    public void setIncomeTax(double incomeTax) {
-        IncomeTax = incomeTax;
-    }
+	public void setTaxablePay(double taxablePay) {
+		TaxablePay = taxablePay;
+	}
 
-    public double getNetPay() {
-        return NetPay;
-    }
+	public double getIncomeTax() {
+		return IncomeTax;
+	}
 
-    public void setNetPay(double netPay) {
-        NetPay = netPay;
-    }
+	public void setIncomeTax(double incomeTax) {
+		IncomeTax = incomeTax;
+	}
 
-    @Override
-    public String toString() {
-        return "Employee{" +
-                "EmpId=" + EmpId +
-                ", EmpName='" + EmpName + '\'' +
-                ", PhoneNumber='" + PhoneNumber + '\'' +
-                ", Address='" + Address + '\'' +
-                ", Department='" + Department + '\'' +
-                ", EmpStart='" + EmpStart + '\'' +
-                ", Gender='" + Gender + '\'' +
-                ", BasicPay=" + BasicPay +
-                ", Deductions=" + Deductions +
-                ", TaxablePay=" + TaxablePay +
-                ", IncomeTax=" + IncomeTax +
-                ", NetPay=" + NetPay +
-                '}';
-    }
+	public double getNetPay() {
+		return NetPay;
+	}
+
+	public void setNetPay(double netPay) {
+		NetPay = netPay;
+	}
+
+	@Override
+	public String toString() {
+		return "model.Employee{" +
+				"EmpId=" + EmpId +
+				", EmpName='" + EmpName + '\'' +
+				", PhoneNumber='" + PhoneNumber + '\'' +
+				", Address='" + Address + '\'' +
+				", Department='" + Department + '\'' +
+				", EmpStart='" + EmpStart + '\'' +
+				", Gender='" + Gender + '\'' +
+				", BasicPay=" + BasicPay +
+				", Deductions=" + Deductions +
+				", TaxablePay=" + TaxablePay +
+				", IncomeTax=" + IncomeTax +
+				", NetPay=" + NetPay +
+				'}';
+	}
 }
