@@ -4,17 +4,10 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-/**
- * Purpose: This class is used for establish connection between java progaram and Database
- * @author SURJYAMANI DUAN
- */
-
 public class EmployeeConfig {
 
 	private static Connection connection = null;
-	/**
-	 * Using static block creating the connection
-	 */
+
 	static {
 		String URL_JD = "jdbc:mysql://localhost:3306/payroll_service";
 		String USER_NAME = "root";

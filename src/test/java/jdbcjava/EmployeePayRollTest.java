@@ -1,5 +1,6 @@
 package jdbcjava;
 
+
 import org.junit.Assert;
 import org.junit.Test;
 import java.util.List;
@@ -17,7 +18,7 @@ public class EmployeePayRollTest {
 	@Test
 	public void givenUpdatingTerisaBasicPay_whenUpdate_ShouldReturnUpdatedPay() {
 		double BasicPay = 3000000;
-		String Name = "Tas";
+		String Name = "Terisa";
 		double salaryUpdated = employeePayRollService.updateBasicPay(Name, BasicPay);
 		Assert.assertEquals(BasicPay, salaryUpdated,0.0);
 	}
@@ -25,7 +26,7 @@ public class EmployeePayRollTest {
 	@Test
 	public void givenUpdatingRahulBasicPay_whenUpdate_ShouldReturnUpdatedPay() {
 		double BasicPay = 800000;
-		String Name = "raj";
+		String Name = "rahul";
 		double salaryUpdated = employeePayRollService.updateBasicPay(Name, BasicPay);
 		Assert.assertEquals(BasicPay, salaryUpdated,0.0);
 	}
